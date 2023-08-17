@@ -1,16 +1,15 @@
 import logo from './logo.svg';
 import './App.scss';
-import {Route, Routes} from "react-router-dom";
-import BoardList from './routes/BoardList';
-import React from 'react';
-import Home from './routes/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import BoardList from "./BoardList";
+import Write from './Write';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home></Home>}></Route>
-      <Route path='/board' element={<BoardList></BoardList>}></Route>
-    </Routes>
+    <div className="App">
+      <BoardList></BoardList>
+      <Write></Write>
+    </div>
   );
 }
 
